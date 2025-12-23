@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ramesh Maurya - Resume</title>
+    <style>
+        /* Page setup for PDF printing */
+        @page {
+            size: A4;
+            margin: 1cm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: #333;
+        }
+        
+        /* Container to control width */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header section */
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #2c5aa0;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c5aa0;
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            margin-top: 10px;
+            font-size: 11px;
+            color: #555;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 25px;
+            <!-- page-break-inside: avoid; -->
+        }
+        
+        h2 {
+            color: #2c5aa0;
+            font-size: 14px;
+            margin: 0 0 8px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #eee;
+            text-transform: uppercase;
+        }
+        
+        h3 {
+            font-size: 13px;
+            margin: 10px 0 5px 0;
+            color: #444;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            margin: 8px 0;
+        }
+        
+        th {
+            background-color: #f5f7fa;
+            text-align: left;
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+        }
+        
+        /* Lists */
+        ul {
+            margin: 5px 0;
+            padding-left: 18px;
+        }
+        
+        li {
+            margin-bottom: 3px;
+            font-size: 11px;
+        }
+        
+        /* Projects */
+        .project {
+            background: #f9fafc;
+            padding: 10px;
+            margin: 8px 0;
+            border-left: 3px solid #2c5aa0;
+            page-break-inside: avoid;
+        }
+        
+        .project h3 {
+            margin-top: 0;
+            color: #2c5aa0;
+        }
+        
+        .project p {
+            margin: 3px 0;
+            font-size: 11px;
+        }
+        
+        /* Two-column layout for some sections */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .column {
+            width: 48%;
+        }
+        
+        /* Signature */
+        .declaration {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .signature {
+            text-align: right;
+            margin-top: 40px;
+        }
+        
+        .signature p {
+            margin: 5px 0;
+        }
+        
+        /* Page break control */
+        .page-break {
+            page-break-before: always;
+        }
+        
+        /* Compact layout adjustments */
+        .compact-list li {
+            margin-bottom: 2px;
+        }
+        
+        .highlight {
+            background-color: #fff;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        /* For inline skills */
+        .skills span {
+            display: inline-block;
+            background: #eef2f7;
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 3px;
+            font-size: 10px;
+        }
+		
+		.no-print-path {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- PAGE 1 -->
+        <div class="header">
+            <h1>RAMESH MAURYA</h1>
+            <div class="contact-info">
+                <span>📍 Gurugram, Haryana</span> | 
+                <span>📞 +91-8739011333</span> | 
+                <span>📧 rameshmaurya137@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Motivated and detail-oriented Post Graduate in Computer Science with over 3 years of hands-on experience in web development. Proficient in PHP, MySQL, HTML, CSS, Bootstrap, and Python (FastAPI). Demonstrated ability to design, develop, and maintain robust web applications. Quick learner with strong problem-solving skills and a collaborative mindset, eager to contribute to dynamic software engineering teams.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>University</th>
+                    <th>Year</th>
+                    <th>Institute</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>MCA</td>
+                    <td>IGNOU</td>
+                    <td>2020</td>
+                    <td>Study Center MNNIT</td>
+                    <td>Passed</td>
+                </tr>
+                <tr>
+                    <td>PGDCA</td>
+                    <td>IGNOU</td>
+                    <td>2019</td>
+                    <td>Study Center MNNIT</td>
+                    <td>Passed</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Languages</h3>
+                    <div class="skills">
+                        <span>PHP</span>
+                        <span>Python</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    
+					<h3>Frameworks & Libraries</h3>
+					<div class="skills">
+						<span>FastAPI</span>
+						<span>Next.js</span>
+						<span>React</span>
+						<span>Bootstrap</span>
+						<span>WordPress</span>
+						<span>Tailwind CSS</span>
+					</div>
+                </div>
+                
+                <div class="column">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skills">
+                        <span>VS Code</span>
+                        <span>Cursor</span>
+                        <span>Notepad++</span>
+                        <span>Android Studio</span>
+                        <span>Dreamweaver</span>
+                        <span>Git</span>
+                        <span>Windows</span>
+                        <span>Linux</span>
+                    </div>
+                    
+                    <h3>Specializations</h3>
+                    <div class="skills">
+                        <span>REST API Development</span>
+                        <span>API Integration</span>
+                        <span>Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            
+            <h3>API Developer — Allied Clicks (August 2024 – Present)</h3>
+            <ul class="compact-list">
+                <li>Design and develop RESTful APIs using PHP for various client applications</li>
+                <li>Integrate third-party APIs including payment gateways, SMS services, and social media platforms</li>
+                <li>Implement API authentication, rate limiting, and security best practices</li>
+                <li>Create API documentation and support frontend developers in integration</li>
+                <li>Optimize API performance and handle data exchange in JSON/XML formats</li>
+            </ul>
+            
+            <h3>Web Developer — Desire Web World (July 2021 – July 2024)</h3>
+            <ul class="compact-list">
+                <li>Developed and maintained web applications using PHP, MySQL, HTML, CSS, and Bootstrap</li>
+                <li>Collaborated with teams to design and implement scalable solutions</li>
+                <li>Ensured code quality, performance, and security across projects</li>
+                <li>Participated in complete software development lifecycle</li>
+            </ul>
+        </div>
+
+        <!-- PAGE BREAK -->
+        <!-- <div class="page-break"></div> -->
+        
+        <!-- PAGE 2 -->
+       <div class="section">
+			<h2>Projects</h2>
+			
+			<div class="project">
+				<h3>1. Hospital Management System</h3>
+				<p><strong>Live Project | Team Size: 1 | URL:</strong> https://vidyaaesthetics.in/</p>
+				<p><strong>Tech Stack:</strong> PHP, MySQL, HTML, CSS, Bootstrap</p>
+				<p><strong>Responsibilities:</strong> Developed and integrated various modules using PHP including patient registration, appointment scheduling, and billing systems</p>
+			</div>
+			
+			<div class="project">
+				<h3>2. News Management System</h3>
+				<p><strong>Live Project | Team Size: 2 | URL:</strong> https://www.railsamacharbureauald.com/</p>
+				<p><strong>Tech Stack:</strong> PHP, MySQL, HTML, CSS, Bootstrap</p>
+				<p><strong>Responsibilities:</strong> Contributed to backend and frontend development, implemented user authentication and content management features</p>
+			</div>
+			
+			<div class="project">
+				<h3>3. School Management System</h3>
+				<p><strong>Live Project | Team Size: 2 | URL:</strong> http://www.snabic.in/</p>
+				<p><strong>Tech Stack:</strong> PHP, MySQL, HTML, CSS, Bootstrap</p>
+				<p><strong>Responsibilities:</strong> Developed multiple PHP modules for student management, fee collection, and attendance tracking</p>
+			</div>
+			 
+			
+			<div class="project">
+				<h3>4. Arav Mega Store - E-commerce Platform</h3>
+				<p><strong>Personal Full-Stack Project | Solo Developer</strong></p>
+				<p><strong>Tech Stack:</strong> Next.js, FastAPI, Python, MySQL, Tailwind CSS</p>
+				<ul class="compact-list">
+					<li>Built complete e-commerce platform with product catalog, cart, and checkout system</li>
+					<li>Developed RESTful APIs using FastAPI (Python) with asynchronous endpoints</li>
+					<li>Created responsive frontend with Next.js featuring Server-Side Rendering (SSR)</li>
+					<li>Implemented user authentication using JWT tokens and password hashing</li>
+					<li>Integrated product search, filtering, and category management</li>
+					<li>Added admin dashboard for inventory and order management</li>
+				</ul>
+			</div>
+		</div>
+
+        <div class="section two-column">
+            <div class="column">
+                <h2>Strengths</h2>
+                <ul class="compact-list">
+                    <li>Quick Learner</li>
+                    <li>Self-Motivated</li>
+                    <li>Team Player</li>
+                    <li>Adaptable</li>
+                    <li>Problem Solver</li>
+                    <li>Detail-Oriented</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+                <h2>Languages Known</h2>
+                <ul class="compact-list">
+                    <li><strong>Hindi:</strong> Native Proficiency</li>
+                    <li><strong>English:</strong> Professional Proficiency</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Personal Details</h2>
+            <div class="two-column">
+                <div class="column">
+                    <ul class="compact-list">
+                        <li><strong>Father's Name:</strong> Mr. Ram Sewak Maurya</li>
+                        <li><strong>Marital Status:</strong> Married</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="compact-list">
+                        <li><strong>Nationality:</strong> Indian</li>
+                        <li><strong>Gender:</strong> Male</li>
+                        <li><strong>Date of Birth:</strong> June 9, 1992</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+		
+		<div class="declaration">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the information provided above is true and correct to the best of my knowledge.</p>
+            
+            <div class="signature">
+                <p><strong>Place:</strong> Gurugram, Haryana</p>
+                <!-- <p><strong>Date:</strong> 23 December 2025</p> -->
+                <p><strong>Ramesh Maurya</strong></p>
+            </div>
+        </div>
+		
+	
+    </div>
+</body>
+</html>
